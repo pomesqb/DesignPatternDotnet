@@ -6,13 +6,17 @@ namespace Memento
     {
         static void Main(string[] args)
         {
-            Editor editor = new Editor();
-            editor.Content = "a";
-            editor.Content = "b";
-            editor.Content = "c";
-            editor.Content = "d";
-            editor.Undo();
-            editor.Undo();
+            var history = new History();
+
+            var editor = new Editor();
+            editor.Title = "title a";
+            editor.Content = "content a";
+            history.Push(editor.CreateMemento());
+
+            editor.Title = "title b";
+            editor.Content = "content b";
+
+            editor.Restore(history.Pop());
 
             Console.WriteLine("Editor Content:" + editor.Content);
         }

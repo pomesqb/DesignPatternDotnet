@@ -4,27 +4,24 @@ using System.Text;
 
 namespace Memento
 {
+    /// <summary>
+    /// Originator
+    /// </summary>
     class Editor
     {
-        private Stack<string> _stack = new Stack<string>();
+        public string Title { get; set; }
+        public string Content { get; set; }
 
-        private string _content;
-
-        public string Content
+        public EditorState CreateMemento()
         {
-            get
-            {
-                return _stack.Peek();
-            }
-            set
-            {
-                _stack.Push(value);
-            }
+            var editorState = new EditorState(Title, Content);
+            return editorState;
         }
 
-        public void Undo()
+        public void Restore(EditorState editorState)
         {
-            _stack.Pop();
+            Title = editorState.Title;
+            Content = editorState.Content;
         }
     }
 }
