@@ -1,45 +1,29 @@
 ﻿using System;
-using System.Collections.Generic;
+using System.Collections;
 using System.Text;
 
 namespace State
 {
+    /// <summary>
+    /// Context
+    /// </summary>
     class Canvas
     {
-        private string _mouseIcon = "NormalIcon";
+        private IToolState _toolState;
 
-        public void MouseDown(ToolType toolType)
+        public Canvas(IToolState toolState)
         {
-            if(toolType == ToolType.SelectionTool)
-            {
-                _mouseIcon = "SelectionIcon";
-            }
-            else if(toolType == ToolType.Pen)
-            {
-                _mouseIcon = "PenIcon";
-
-            }
-            else if(toolType == ToolType.Eraser)
-            {
-                _mouseIcon = "EraserIcon";
-            }
+            _toolState = toolState;
         }
 
-        public void MouseUp(ToolType toolType)
+        public void MouseDown()
         {
-            if (toolType == ToolType.SelectionTool)
-            {
-                _mouseIcon = "SelectionIcon";
-            }
-            else if (toolType == ToolType.Pen)
-            {
-                _mouseIcon = "PenIcon";
+            _toolState.MouseDown();
+        }
 
-            }
-            else if (toolType == ToolType.Eraser)
-            {
-                _mouseIcon = "EraserIcon";
-            }
+        public void MouseUp()
+        {
+            _toolState.MouseUp();
         }
     }
 }
