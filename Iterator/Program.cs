@@ -11,9 +11,13 @@ namespace Iterator
             history.Push("all");
             history.Push("gods");
 
-            for (int i = 0; i < history.GetHistoryData.Count; i++)
+            IIterator iterator = new ConcreteIterator(history);
+
+            while (!iterator.IsDone())
             {
-                Console.WriteLine(history.GetHistoryData[i]);
+                Console.WriteLine(iterator.CurrentItem());
+
+                iterator.Next();
             }
         }
     }
