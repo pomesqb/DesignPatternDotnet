@@ -9,6 +9,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "State", "State\State.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Iterator", "Iterator\Iterator.csproj", "{D149B771-CE24-4F80-B19A-8A54EDE2A072}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Strategy", "Strategy\Strategy.csproj", "{BD6F9FDE-253D-4F2F-9E42-9AFB7A7B7195}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TemplateMethod", "TemplateMethod\TemplateMethod.csproj", "{F921E89E-EFB2-4B03-88F1-73D44A967F9C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{D149B771-CE24-4F80-B19A-8A54EDE2A072}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D149B771-CE24-4F80-B19A-8A54EDE2A072}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D149B771-CE24-4F80-B19A-8A54EDE2A072}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD6F9FDE-253D-4F2F-9E42-9AFB7A7B7195}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD6F9FDE-253D-4F2F-9E42-9AFB7A7B7195}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD6F9FDE-253D-4F2F-9E42-9AFB7A7B7195}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD6F9FDE-253D-4F2F-9E42-9AFB7A7B7195}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F921E89E-EFB2-4B03-88F1-73D44A967F9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F921E89E-EFB2-4B03-88F1-73D44A967F9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F921E89E-EFB2-4B03-88F1-73D44A967F9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F921E89E-EFB2-4B03-88F1-73D44A967F9C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
