@@ -14,7 +14,7 @@ namespace TemplateMethod
             var concreteClassB = new ConcreteClass2();
             concreteClassB.TemplateMethod();
 
-            Console.WriteLine("Done TempplateMethod!");
+            Console.ReadLine();
         }
     }
 }

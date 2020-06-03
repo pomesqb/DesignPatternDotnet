@@ -12,6 +12,8 @@ namespace Command
             var button = new Button();
             button.SetCommand(command);
             button.ExecuteCommand();
+
+            Console.ReadLine();
         }
     }
 }

@@ -13,7 +13,7 @@ namespace Strategy
             context.SetStrategy(new ConcreteStrategyB());
             context.DoSomething();
 
-            Console.WriteLine("Done Strategy!");
+            Console.ReadLine();
         }
     }
 }

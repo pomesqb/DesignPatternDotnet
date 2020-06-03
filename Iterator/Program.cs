@@ -19,6 +19,8 @@ namespace Iterator
 
                 iterator.Next();
             }
+
+            Console.ReadLine();
         }
     }
 }

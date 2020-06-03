@@ -19,6 +19,8 @@ namespace Memento
             editor.Restore(history.Pop());
 
             Console.WriteLine("Editor Content:" + editor.Content);
+
+            Console.ReadLine();
         }
     }
 }

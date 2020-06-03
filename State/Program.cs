@@ -10,7 +10,7 @@ namespace State
             canvas.MouseDown();
             canvas.MouseUp();
 
-            Console.WriteLine("Done!");
+            Console.ReadLine();
         }
     }
 }
